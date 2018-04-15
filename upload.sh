@@ -5,6 +5,6 @@ venv/Scripts/activate
 pip install awscli || exit 3
 
 echo "syncing with AWS..."
-aws s3 sync public s3://neglostyti.com --acl public-read
+aws s3 sync public s3://www.neglostyti.com --acl public-read
 
 echo "Done."

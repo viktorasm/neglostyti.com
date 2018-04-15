@@ -1,29 +1,42 @@
-baseURL = "http://neglostyti.com/"
+baseURL = "https://www.neglostyti.com/"
 languageCode = "en-us"
 title = "neglostyti.com"
+theme = "beautifulhugo"
 
-theme = "coder" # set the theme
+pygmentsCodeFences=true
+pygmentsCodeFencesGuessSyntax=true
+
+
+[author]
+  name = "Viktoras Makauskas"
+
 
 [params] # theme parameters
-    author = "Viktoras Makauskas" # author's name
-    info = "things happen" # author's job title or info
-    description = "Viktoras Makauskas' namespace" # site description
-    keywords = "" # site keywords
+  logoTitle = "neglostyti.com"        # default: the title value    # 默认值: 上面设置的title值
+  description = "Viktoras Makauskas' namespace" # site description
+  keywords = "" # site keywords
 
 # Social links
 [[params.social]]
     name = "Github"
     weight = 1
+    type = "github"
     url = "https://github.com/viktorasm/"
 [[params.social]]
     name = "Twitter"
     weight = 2
+    type = "twitter"
     url = "https://twitter.com/viktorasm/"
 [[params.social]]
     name = "LinkedIn"
     weight = 3
+    type = "linkedin"
     url = "https://www.linkedin.com/in/viktoras-makauskas/"
 
+[[menu.main]]
+    name = "Posts"
+    weight = 1
+    url  = "/posts/"
 [[menu.main]]
     name = "Projects"
     weight = 1
@@ -32,3 +45,4 @@ theme = "coder" # set the theme
     name = "About"
     weight = 2
     url = "/about/"
+
