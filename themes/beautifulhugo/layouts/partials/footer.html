@@ -30,6 +30,7 @@
           </li>
           {{ end }}
         </ul>
+
         <p class="credits copyright text-muted">
           {{ if .Site.Author.name }}
             {{ if .Site.Author.website }}
@@ -39,6 +40,7 @@
             {{ end }}
           {{ end }}
 
+
           &nbsp;&bull;&nbsp;
           {{ .Site.LastChange.Format "2006" }}
 
@@ -46,11 +48,6 @@
             &nbsp;&bull;&nbsp;
             <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
           {{ end }}
-        </p>
-        <!-- Please don't remove this, keep my open source work credited :) -->
-        <p class="credits theme-by text-muted">
-          {{ i18n "poweredBy" . | safeHTML }}
-          {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
         </p>
       </div>
     </div>
@@ -89,27 +86,5 @@
 </script>
 {{ end }}
 
-{{ if .Site.Params.piwik }}
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
-
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://{{ .Site.Params.piwik.server }}/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "{{ .Site.Params.piwik.id }}"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript>
-<!-- Piwik Image Tracker -->
-<img src="http://{{ .Site.Params.piwik.server }}/piwik.php?idsite={{ .Site.Params.piwik.id }}&amp;rec=1" style="border:0" alt="" />
-<!-- End Piwik -->
-</noscript>
-<!-- End Piwik Code -->
-{{ end }}
 
 {{- partial "footer_custom.html" . }}
