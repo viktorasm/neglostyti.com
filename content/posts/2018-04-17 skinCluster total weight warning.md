@@ -52,7 +52,7 @@ The above code is pretty simple:
 3. Depending how far from `1.0` it's been chosen, Maya will either produce the warning or not.
 4. Play a little game finding the limits of when the warning is produced and when it is not.
 
-The above code produces following output:
+Output produced was:
 
 ```text
 testing value: 1.0000000000000000000
@@ -86,7 +86,7 @@ if abs(1.0-actual_sum_of_weights)>=0.0000000001:
   produce_a_warning()
 ```
 
-Sounds like a pretty rough limit. Slightly higher errors should definitely should not make a difference for mesh deformation.
+Sounds like a pretty rough limit. Slightly higher errors should definitely not make a difference for mesh deformation.
 
 Solution? Probably easiest is just to disable normalization in the skinCluster, if your weights setting code already takes care of that.
 
