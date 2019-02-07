@@ -25,7 +25,7 @@ But next part is disappointing:
 Ping request could not find host ngst-osx. Please check the name and try again
 ```
 
-How can this be? `nslookup` can definitely resolve the IP, so DNS works. After some googling around seems like the trick is to suffix it with a dot to make Windows jpst name resolution use DNS as the method.
+How can this be? `nslookup` can definitely resolve the IP, so DNS works. After some googling around seems like the trick is to suffix it with a dot to make Windows host name resolution use DNS as the method.
 
 
 ```text
