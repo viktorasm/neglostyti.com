@@ -19,7 +19,7 @@ This all is enough to get this itch that relying on a naming convention is not t
 
 ## Naming convention
 
-Comming up with a special name structure seems to be most prevalent, probably driven by the fact that you have to rename those `joint01`, `joint02` anyway.
+Coming up with a special name structure seems to be most prevalent, probably driven by the fact that you have to rename those `joint01`, `joint02` anyway.
 
 Suffixes (`_L, _l, _lf, _R, _r, _rt`) or prefixes  (`L_, R_, lf_, rt_`) seem to be most common, but middle of the name isn't that rare (`leg_L0_3_jnt`, `arm_L_01_bnd`) as well.
 
@@ -42,7 +42,7 @@ Later pairs can be matched by having same custom label. This isn't a very univer
    
 ## Attribute connections
 
-So far the most robust option in my opinion to have unambiguous links exactly the way you want. You if don't trust me, listen to [Siew Yi Liang](https://twitter.com/ylsiew/status/1093417883760115712):
+So far the most robust option in my opinion to have unambiguous links exactly the way you want. If you don't trust me, listen to [Siew Yi Liang](https://twitter.com/ylsiew/status/1093417883760115712):
 
 > Message connections. Relying on naming conventions is a surefire way to increase your support burden with the number of degenerate cases that occur.
 
