@@ -13,7 +13,7 @@ One thing I wanted to fix for quite a while in ngSkinTools is how left side infl
 
 A bit later an option to match by suffixes was also added, because some people like `clavicle_L` better than `L_clavicle`. And only recently I discovered that there's also naming schemes like `leg_L0_3_jnt` (looking at you, [mGear](http://www.mgear-framework.com/)!).
 
-This all is enough to get this itch that relying on a naming convention is not the most reliable thing one would end up doing, so I mobilized my Twitter swarm of field professionals (see [full thread](https://twitter.com/viktorasm/status/1092688447955976193)) and below is what came out of this, sorted from most common approach.
+This all is enough to get this itch that relying on a naming convention is not the most reliable thing one would end up doing, so I mobilized my Twitter swarm of field professionals asking what they do about this topic, and below is what came out of this (you can also see the [full thread here](https://twitter.com/viktorasm/status/1092688447955976193)).
 
 
 
@@ -47,6 +47,7 @@ So far the most robust option in my opinion to have unambiguous links exactly th
 > Message connections. Relying on naming conventions is a surefire way to increase your support burden with the number of degenerate cases that occur.
 
 So far I've seen/heard:
+
 * Each joint has a custom attribute added (e.g. "oppositeJoint"), and a connection is created to that from an opposite joint message attribute, e.g.: `L_joint.message -> R_joint.oppositeJoint`;
 * "Hub" nodes providing links to left and right joints.
     
