@@ -9,11 +9,11 @@ date: 2019-02-07
 *TLDR version: if you're building animation or rigging tools for Maya, and you're interested in ways how people setup rigs to map their left and right joints, here's a summary of various ways spotted in the wild.*
 
 
-One thing I wanted to fix for quite a while in ngSkinTools is how left side influences are matched to corresponding right side influences and vice versa. Standard Maya weight mirroring tools simply match by joint position, so I felt pretty good about also giving the option to match by name: if you have `L_clavicle` and `R_clavicle`, you just say *"I'm using a L\_, R\_ as prefixes"*, ngSkinTools drop the prefixes and finds two joints named as "clavicle". 
+One thing I wanted to fix for quite a while in ngSkinTools is how left side influences are matched to corresponding right side influences and vice versa. Standard Maya weight mirroring tools simply match by joint position, so I felt pretty good about also giving the option to match by name: if you have `L_clavicle` and `R_clavicle`, you just say *"I'm using L\_, R\_ as prefixes"*, ngSkinTools drops these prefixes and finds two joints named as "clavicle". 
 
 A bit later an option to match by suffixes was also added, because some people like `clavicle_L` better than `L_clavicle`. And only recently I discovered that there's also naming schemes like `leg_L0_3_jnt` (looking at you, [mGear](http://www.mgear-framework.com/)!).
 
-This all is enough to get this itch that relying on a naming convention is not the most reliable thing one would end up doing, so I mobilized my Twitter swarm of field professionals asking what they do about this topic, and below is what came out of this (you can also see the [full thread here](https://twitter.com/viktorasm/status/1092688447955976193)).
+This all is enough to get this itch that relying on a naming convention is not the most reliable thing one would end up doing. I mobilized my Twitter swarm of field professionals asking what they do about this topic, and below is what came out of this (you can also see the [full thread here](https://twitter.com/viktorasm/status/1092688447955976193)).
 
 
 
